@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Personas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+        body{
+            background: linear-gradient(#6610f2, #ffffff);
+            min-height: 100vh;
+        }.bg-success {
+            background-image: linear-gradient(45deg, #6610f2, #ffffff);
+        }
+        .btn-primary {
+      background: linear-gradient(#6610f2, #ffffff);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    .contenedor{
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px collapse #ccc;;
+    }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Inicio de sesion</h1>
+        <form action="login.php" method="post">
+            <div class="mb-3">
+              <label for="Usuario" class="form-label">Usuario:</label>
+              <input type="text" class="form-control" id="Usuario" name="Usuario" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="contraseña" class="form-label">Contraseña:</label>
+              <input type="password" class="form-control" id="contraseña" name="contraseña">
+            </div>  
+            <button type="submit" class="btn-primary btn" name="login" id="login">ingresar</button>
+            <h3>¿No tienes una cuenta? <a href="registro.html" class="btn-primary btn"> Registrarse</a></h3>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
